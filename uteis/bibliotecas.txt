@@ -1,0 +1,31 @@
+streamlit: pip install streamlit
+streamlit_book: pip install streamlit_book
+streamlit-authenticator: pip install streamlit-authenticator
+streamlit-option-menu: pip install streamlit-option-menu
+pandas: pip install pandas
+kivy: pip install kivy
+requests: pip install requests
+pyodbc: pip install pyodbc
+fpdf2: pip install fpdf2
+pyinstaller: pip install pyinstaller
+mysql-connector:pip install mysql-connector-python
+smtplib: pip install secure-smtplib
+PyMSQL: pip install PyMySQL
+Google Maps: pip install -U googlemaps
+folium: pip install folium
+
+# A função streamlit_book
+Para criação dos menus da página principal
+
+# Para gerar o arquivo requeriments.txt
+pip freeze > requirements.txt
+
+
+# Gerar um .exe de um arquivo com GUI
+pyinstaller --onefile -w main.py
+-w é usado quando usar tela como tkinter
+Caso não use uma GUI retirar o -w
+
+
+# Apagar o SideBar
+streamlit run app.py --ui. hideSidebarNav true
